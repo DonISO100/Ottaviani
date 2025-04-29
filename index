@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Name goes here</title>
+  <style>
+    body {
+      background-color: #000000;
+      font-family: "Times New Roman", serif;
+      color: #eeeeee;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    #container {
+      width: 800px;
+      margin: 0 auto;
+      background-color: #111111;
+      padding: 20px;
+      border: 1px solid #555555;
+    }
+    h1 {
+      font-size: 32px;
+      color: #00ccff;
+      border-bottom: 2px solid #00ccff;
+      padding-bottom: 10px;
+    }
+    h2 {
+      color: #cccccc;
+    }
+    .category-links {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+    .category-links li {
+      margin: 10px 0;
+    }
+    .category-links a {
+      color: #66ccff;
+      font-size: 18px;
+      text-decoration: underline;
+    }
+    .category-links a:hover {
+      color: #ff6666;
+    }
+    .footer {
+      font-size: 12px;
+      margin-top: 30px;
+      color: #888888;
+    }
+    .centered-img {
+      display: block;
+      margin: 20px auto;
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+      border: 1px solid #444;
+      padding: 5px;
+      background-color: #222;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Welcome to the Ottaviani Archive</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Fra_Angelico_-_Saint_Anthony_Abbot_Shunning_the_Mass_of_Gold_-_44.550_-_Museum_of_Fine_Arts.jpg/1024px-Fra_Angelico_-_Saint_Anthony_Abbot_Shunning_the_Mass_of_Gold_-_44.550_-_Museum_of_Fine_Arts.jpg" alt="Fra Angelico Painting" class="centered-img">
+    <p><i>Dedicated to preserving links to important theological texts.</i></p>
+
+    <h2>📂 Browse by Category</h2>
+    <ul class="category-links">
+      <li><a href="commentaries.html">Biblical Commentaries</a></li>
+      <li><a href="spiritual.html">Spiritual Life</a></li>
+      <li><a href="philosophy.html">Philosophy</a></li>
+      <li><a href="theology.html">Theology</a></li>
+      <li><a href="hagiology.html">Hagiology</a></li>
+      <li><a href="commentaries.html">Biblical Commentaries</a></li>
+    </ul>
+
+    <div class="footer">
+      <p>Last updated: April 2025</p>
+      <p>Website by Don</p>
+    </div>
+  </div>
+</body>
+</html>
