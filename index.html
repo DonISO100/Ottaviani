@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Ottaviani Archive</title>
+  <meta name="description" content="Archive of theological texts in mystical, moral, dogmatic, and biblical theology.">
+  <link rel="icon" href="favicon.ico">
   <style>
     body {
       background-color: #000000;
@@ -28,20 +30,20 @@
     h2 {
       color: #ffffff;
     }
-    .category-links {
+    nav ul {
       list-style: none;
       padding: 0;
       margin: 20px 0;
     }
-    .category-links li {
+    nav li {
       margin: 10px 0;
     }
-    .category-links a {
+    nav a {
       color: #66ccff;
       font-size: 18px;
       text-decoration: underline;
     }
-    .category-links a:hover {
+    nav a:hover {
       color: #ff6666;
     }
     .footer {
@@ -70,18 +72,24 @@
   <div id="container">
     <h1>Welcome to the Ottaviani Archive</h1>
     <figure>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Fra_Angelico_-_Saint_Anthony_Abbot_Shunning_the_Mass_of_Gold_-_44.550_-_Museum_of_Fine_Arts.jpg/1024px-Fra_Angelico_-_Saint_Anthony_Abbot_Shunning_the_Mass_of_Gold_-_44.550_-_Museum_of_Fine_Arts.jpg" alt="Fra Angelico Painting" class="centered-img">
+      <img 
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Fra_Angelico_-_Saint_Anthony_Abbot_Shunning_the_Mass_of_Gold_-_44.550_-_Museum_of_Fine_Arts.jpg/1024px-Fra_Angelico_-_Saint_Anthony_Abbot_Shunning_the_Mass_of_Gold_-_44.550_-_Museum_of_Fine_Arts.jpg" 
+        alt="St. Anthony flees from gold - Fra Angelico painting" 
+        class="centered-img" 
+        loading="lazy">
       <figcaption><em>St. Anthony Flees from the Mound of Gold by Fra Angelico</em></figcaption>
     </figure>
     <p><i>Dedicated to preserving links to important theological texts.</i></p>
 
     <h2>📂 Browse by Category</h2>
-    <ul class="category-links">
-      <li><a href="mystical.html">Mystical Theology</a></li>
-      <li><a href="moral.html">Moral Theology</a></li>
-      <li><a href="dogmatic.html">Dogmatic Theology</a></li>
-      <li><a href="commentaries.html">Biblical Commentaries</a></li>
-    </ul>
+    <nav>
+      <ul>
+        <li><a href="mystical.html" title="View Mystical Theology texts">Mystical Theology</a></li>
+        <li><a href="moral.html" title="View Moral Theology texts">Moral Theology</a></li>
+        <li><a href="dogmatic.html" title="View Dogmatic Theology texts">Dogmatic Theology</a></li>
+        <li><a href="commentaries.html" title="View Biblical Commentaries">Biblical Commentaries</a></li>
+      </ul>
+    </nav>
 
     <div class="footer">
       <p>Website by Don</p>
@@ -90,5 +98,6 @@
   </div>
 </body>
 </html>
+
 
 
