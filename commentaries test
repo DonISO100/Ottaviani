@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Biblical Commentaries</title>
+  <meta name="description" content="Commentaries on the books of Sacred Scripture from renowned Catholic theologians.">
+  <link rel="icon" href="favicon.ico">
+  <style>
+    body {
+      background-color: #000000;
+      font-family: "Times New Roman", serif;
+      color: #ffffff;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    #container {
+      width: 800px;
+      margin: 0 auto;
+      background-color: #111111;
+      padding: 20px;
+      border: 1px solid #555555;
+    }
+    h1 {
+      font-size: 32px;
+      color: #00ccff;
+      border-bottom: 2px solid #00ccff;
+      padding-bottom: 10px;
+    }
+    .book-entry {
+      margin: 30px 0;
+    }
+    .book-title {
+      font-size: 22px;
+      color: #66ccff;
+      margin-bottom: 10px;
+    }
+    .commentators a {
+      color: #ffffff;
+      font-size: 18px;
+      text-decoration: underline;
+      margin: 0 5px;
+    }
+    .commentators a:hover {
+      color: #ff6666;
+    }
+    .footer {
+      font-size: 12px;
+      margin-top: 30px;
+      color: #cccccc;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <p><a href="index.html" style="color: #66ccff; font-size: 16px; text-decoration: underline;">&larr; Back to Home</a></p>
+
+    <div style="margin: 20px auto; text-align: center; font-size: 16px;">
+      <table style="margin: 0 auto; border-collapse: collapse;">
+        <tr>
+          <td><a href="#Genesis" style="color: #66ccff; text-decoration: underline;">Gn</a></td>
+          <td><a href="#Exodus" style="color: #66ccff; text-decoration: underline;">Ex</a></td>
+          <td><a href="#Leviticus" style="color: #66ccff; text-decoration: underline;">Lv</a></td>
+          <td><a href="#Numbers" style="color: #66ccff; text-decoration: underline;">Nu</a></td>
+          <td><a href="#Deuteronomy" style="color: #66ccff; text-decoration: underline;">Dt</a></td>
+        </tr>
+        <tr>
+          <td><a href="#Joshua" style="color: #66ccff; text-decoration: underline;">Jos</a></td>
+          <td><a href="#Judges" style="color: #66ccff; text-decoration: underline;">Jgs</a></td>
+          <td><a href="#Ruth" style="color: #66ccff; text-decoration: underline;">Ru</a></td>
+          <td><a href="#1 Kings (1 Samuel)" style="color: #66ccff; text-decoration: underline;">1Sm</a></td>
+          <td><a href="#2 Kings (2 Samuel)" style="color: #66ccff; text-decoration: underline;">2Sm</a></td>
+        </tr>
+        <!-- Add more rows as needed for full canon -->
+      </table>
+    </div>
+    <p><i>Featuring classic Catholic commentaries by Lapide, Calmet, and others.</i></p>
+
+    <!-- BOOK ENTRIES START -->
+
+        <div class="book-entry">
+      <div class="book-title" id="Genesis">Genesis</div>
+      <div class="commentators">
+        <a href="https://archive.org/details/CorneliusALapide">Cornelius a Lapide</a> — <a href="https://archive.org/details/AugustinCalmet">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">Richard Simon</a>
+      </div>
+    </div>
+
+    <div class="book-entry">
+      <div class="book-title" id="Exodus">Exodus</div>
+      <div class="commentators">
+        <a href="https://archive.org/details/CorneliusALapide">Cornelius a Lapide</a> — <a href="https://archive.org/details/AugustinCalmet">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">Richard Simon</a>
+      </div>
+    </div>
+
+    <div class="book-entry">
+      <div class="book-title" id="Leviticus">Leviticus</div>
+      <div class="commentators">
+        <a href="https://archive.org/details/CorneliusALapide">Cornelius a Lapide</a> — <a href="https://archive.org/details/AugustinCalmet">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">Richard Simon</a>
+      </div>
+    </div>
+
+    <div class="book-entry">
+      <div class="book-title" id="Numbers">Numbers</div>
+      <div class="commentators">
+        <a href="https://archive.org/details/CorneliusALapide">Cornelius a Lapide</a> — <a href="https://archive.org/details/AugustinCalmet">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">Richard Simon</a>
+      </div>
+    </div>
+
+    <div class="book-entry">
+      <div class="book-title" id="Deuteronomy">Deuteronomy</div>
+      <div class="commentators">
+        <a href="https://archive.org/details/CorneliusALapide">Cornelius a Lapide</a> — <a href="https://archive.org/details/AugustinCalmet">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">Richard Simon</a>
+      </div>
+    </div>
+
+    <!-- Remaining books to follow -->
+
+    <!-- BOOK ENTRIES END -->
+
+    <div class="footer">
+      <p>Website by Don</p>
+      <p>Last updated: April 2025</p>
+    </div>
+  </div>
+</body>
+</html>
