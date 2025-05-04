@@ -1,574 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Biblical Commentaries</title>
-  <meta name="description" content="Commentaries on the books of Sacred Scripture from approved authors.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biblical Theology</title>
+  <meta name="description" content="Catholic commentaries on Sacred Scripture from approved authors.">
   <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #000000;
-      font-family: "Times New Roman", serif;
-      color: #ffffff;
-      text-align: center;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Crimson Text', serif;
       margin: 0;
       padding: 0;
     }
-    #container {
-      width: 800px;
+
+    .container {
+      max-width: 900px;
       margin: 0 auto;
-      background-color: #111111;
-      padding: 20px;
-      border: 1px solid #555555;
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.85);
+      position: relative;
     }
+
+    .image-header {
+      margin: 20px 0 40px;
+      text-align: center;
+    }
+
+    .image-header img {
+      width: 76.5%;
+      max-width: 520.2px;
+      height: auto;
+      border: 1px solid #333;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    }
+
+    .image-header figcaption {
+      font-size: 14px;
+      color: #aaa;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
     h1 {
-      font-size: 32px;
-      color: #00ccff;
-      border-bottom: 2px solid #00ccff;
-      padding-bottom: 10px;
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #e0e0e0;
     }
-    .book-entry {
-      margin: 30px 0;
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 30px;
     }
-    .book-title {
-      font-size: 22px;
-      color: #66ccff;
+
+    .tab-button {
+      background: #111;
+      border: 1px solid #444;
+      padding: 10px 20px;
+      cursor: pointer;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .tab-button.active {
+      background: #333;
+      border-color: #666;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    summary {
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      background: #111;
+      padding: 10px;
+      border: 1px solid #444;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+
+    details[open] summary {
+      background-color: #222;
+    }
+
+    .commentators {
+      padding: 10px 20px;
+      background-color: #1a1a1a;
+      border-left: 2px solid #555;
       margin-bottom: 10px;
     }
+
     .commentators a {
-      color: #ffffff;
-      font-size: 18px;
+      color: #aad4ff;
       text-decoration: underline;
-      margin: 0 5px;
+      display: block;
+      margin: 5px 0;
     }
+
     .commentators a:hover {
-      color: #ff6666;
+      color: #ff9999;
     }
+
+    .home-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #222;
+      border: 1px solid #555;
+      color: #ccc;
+      padding: 6px 12px;
+      font-size: 14px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .home-button:hover {
+      background-color: #333;
+    }
+
     .footer {
-      font-size: 12px;
-      margin-top: 30px;
-      color: #cccccc;
+      text-align: center;
+      margin-top: 60px;
+      font-size: 13px;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <div id="container">
-    <h1>Biblical Commentaries</h1>
-    <p><a href="index.html" style="color: #66ccff; font-size: 16px; text-decoration: underline;">← Back to Home</a></p>
-    <p><i>Featuring Catholic biblical commentaries from approved authors.</i></p>
+  <div class="container">
+    <a href="index.html" class="home-button">Home</a>
+    <h1>Biblical Theology</h1>
 
-        <div class="book-entry">
-      <div class="book-title">Genesis</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac01lapi/page/34/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livres/6c4_AAAAcAAJ?hl=en&gbpv=1&pg=PR9">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Exodus</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac01lapi/page/350/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livres/6c4_AAAAcAAJ?hl=en&gbpv=1&pg=PA351">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Leviticus</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac01lapi/page/632/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livres/uzOHg65fLLYC?hl=en&gbpv=1&pg=PA1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Numbers</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac01lapi/page/958/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livres/uzOHg65fLLYC?hl=en&gbpv=1&pg=PR163">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Deuteronomy</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac01lapi/page/958/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livres/uzOHg65fLLYC?hl=en&gbpv=1&pg=PR367">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Jouse (Joshua)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac02lapi/page/n7/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livres/KlTfr0WDDR4C?hl=en&gbpv=1&pg=PR1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-
-    <div class="book-entry">
-      <div class="book-title">Judes</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac02lapi/page/94/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livres/KlTfr0WDDR4C?hl=en&gbpv=1&pg=PA145">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Ruth</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac02lapi/page/202/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livres/KlTfr0WDDR4C?hl=en&gbpv=1&pg=PA299">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">1 Kings (1 Samuel)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac02lapi/page/216/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livres/KlTfr0WDDR4C?hl=en&gbpv=1&pg=PA317">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">2 Kings (2 Samuel)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac02lapi/page/n383/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livres/KlTfr0WDDR4C?hl=en&gbpv=1&pg=PA497">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-
-    <div class="book-entry">
-      <div class="book-title">3 Kings (1 Kings)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac02lapi/page/n479/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livres/KlTfr0WDDR4C?hl=en&gbpv=1&pg=PA613">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">4 Kings (2 Kings)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac02lapi/page/n599/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livres/KlTfr0WDDR4C?hl=en&gbpv=1&pg=PA792">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">1 Paralipomenon (1 Chronicles)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac02lapi/page/n681/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/COMMENTAIRE_LITTERAL_SUR_TOUS_LES_LIVRES/_RG1kUjcV9AC?hl=en&gbpv=1&pg=PR1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">2 Paralipomenon (2 Chronicles)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac02lapi/page/n725/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/COMMENTAIRE_LITTERAL_SUR_TOUS_LES_LIVRES/_RG1kUjcV9AC?hl=en&gbpv=1&pg=PA131">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">1 Esdras (Ezra)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac02lapi/page/n781/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/HQ3cOGnlgn8C?hl=en&gbpv=1&pg=PR1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">2 Esdras (Nehemiah)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac02lapi/page/n809/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/HQ3cOGnlgn8C?hl=en&gbpv=1&pg=PA85">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Tobias (Tobit)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac02lapi/page/n841/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/HQ3cOGnlgn8C?hl=en&gbpv=1&pg=PA195">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Judith</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac02lapi/page/n885/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/HQ3cOGnlgn8C?hl=en&gbpv=1&pg=PA331">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Esther</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac02lapi/page/n923/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/HQ3cOGnlgn8C?hl=en&gbpv=1&pg=PA497">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title"> 1 Machabees</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac02lapi/page/956/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litteral_sur_tous_les_livres/aN2mjtmHNS0C?hl=en&gbpv=1&pg=PR1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title"> 2 Machabees</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac02lapi/page/1038/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litteral_sur_tous_les_livres/aN2mjtmHNS0C?hl=en&gbpv=1&pg=PA249">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title"> Job</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac07lapi/page/606/mode/2up">Jacobus Tirinus</a> — <a href="https://www.google.com/books/edition/_/dFlBoNRytcAC?gbpv=1&pg=PR1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title"> Psalms</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac07lapi/page/n961/mode/2up">Robert Bellarmine</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livres/188_AAAAcAAJ?hl=en&gbpv=1&pg=PR1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title"> Proverbs</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac03lapi/page/n5/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/O4vsra_2UrUC?hl=en&gbpv=1&pg=PR1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title"> Ecclesiastes</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac04lapi/page/n7/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livre/fM4_AAAAcAAJ?hl=en&gbpv=1&pg=PA1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title"> Canticle of Canticles (Song of Solomon; Song of Songs)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac04lapi/page/364/mode/2up">Cornelius a Lapide</a> — <a href="https://archive.org/details/bub_gb_O4vsra_2UrUC/page/n585/mode/2up">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Wisdom</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac04lapi/page/730/mode/2up">Cornelius a Lapide</a> — <a href="https://archive.org/details/bub_gb_O4vsra_2UrUC/page/n717/mode/2up">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Ecclesiasticus (Sirach)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac04lapi/page/n7/mode/2up">Cornelius a Lapide</a> — <a href="ttps://www.google.com/books/edition/_/YipRAAAAcAAJ?gbpv=1&pg=PR1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Isaias (Isaiah)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac06lapi/page/78/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/81LAXDAqjZ4C?hl=en&gbpv=1&pg=PR33">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Jeremias (Jeremiah)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac06lapi/page/628/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/Er1dAAAAcAAJ?hl=en&gbpv=1&pg=PR1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Lamentations</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac06lapi/page/906/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/Er1dAAAAcAAJ?hl=en&gbpv=1&pg=PA601">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Baruch</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac06lapi/page/976/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/Er1dAAAAcAAJ?hl=en&gbpv=1&pg=PA685">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Ezechiel (Ezekiel)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac06lapi/page/1010/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/xhMecUzEn1IC?hl=en&gbpv=1&pg=PA1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Daniel</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac06lapi/page/1354/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/xhMecUzEn1IC?hl=en&gbpv=1&pg=PA557">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Osee (Hosea)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac07lapi/page/n69/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/qN8CJNkTMK0C?hl=en&gbpv=1&pg=PA1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Joel</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac07lapi/page/n231/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/qN8CJNkTMK0C?hl=en&gbpv=1&pg=PA133">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Amos</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac07lapi/page/n275/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/qN8CJNkTMK0C?hl=en&gbpv=1&pg=PA181">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Abdias (Obadiah)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac07lapi/page/n373/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/qN8CJNkTMK0C?hl=en&gbpv=1&pg=PA274">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-        
-    <div class="book-entry">
-      <div class="book-title">Jonas (Jonah)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac07lapi/page/n391/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/qN8CJNkTMK0C?hl=en&gbpv=1&pg=PA291">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Micheas (Micah)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac07lapi/page/n421/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/qN8CJNkTMK0C?hl=en&gbpv=1&pg=PA321">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Nahum</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac07lapi/page/n499/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/qN8CJNkTMK0C?hl=en&gbpv=1&pg=PA389">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Habacuc (Habakkuk)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac07lapi/page/n533/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/qN8CJNkTMK0C?hl=en&gbpv=1&pg=PA421">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Sophonias (Zephaniah)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac07lapi/page/n593/mode/2up">Cornelius a Lapide</a> — <a href=" https://www.google.com/books/edition/_/qN8CJNkTMK0C?hl=en&gbpv=1&pg=PA469">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Aggeus (Haggai)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac07lapi/page/608/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/qN8CJNkTMK0C?hl=en&gbpv=1&pg=PA505">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Zacharias (Zechariah)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac07lapi/page/642/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/qN8CJNkTMK0C?hl=en&gbpv=1&pg=PA528">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-        
-    <div class="book-entry">
-      <div class="book-title">Malachias (Malachi)</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac07lapi/page/800/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/qN8CJNkTMK0C?hl=en&gbpv=1&pg=PA651">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Matthew</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac08lapi/page/38/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livre/X5Plk5b4iscC?hl=en&gbpv=1&pg=PR1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Mark</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac08lapi/page/568/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livre/Hr9bAAAAQAAJ?hl=en&gbpv=1&pg=PR1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Luke</div>
-      <div class="commentators">
-        <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livre/Hr9bAAAAQAAJ?hl=en&gbpv=1&pg=PA181">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livre/Hr9bAAAAQAAJ?hl=en&gbpv=1&pg=PA181">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">John</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac08lapi/page/864/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livre/LL9bAAAAQAAJ?hl=en&gbpv=1&pg=PR1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Acts of the Apostles</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac10lapi/page/32/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/F9goxwViaSgC?hl=en&gbpv=1&pg=PR1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
+    <figure class="image-header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/St_Jerome_by_Michelangelo_Merisi_da_Caravaggio.jpeg" alt="St. Jerome by Caravaggio">
+      <figcaption>St. Jerome by Caravaggio</figcaption>
+    </figure>
 
-    <div class="book-entry">
-      <div class="book-title">Romans</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac09lapi/page/26/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/qL5dAAAAcAAJ?hl=en&gbpv=1&pg=PR1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">1 Corinthians</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac09lapi/page/206/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/qL5dAAAAcAAJ?hl=en&gbpv=1&pg=PA305">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">2 Corinthians</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac09lapi/page/352/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/qL5dAAAAcAAJ?hl=en&gbpv=1&pg=PA329">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Galatians</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac09lapi/page/434/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livre/g79bAAAAQAAJ?hl=en&gbpv=1&pg=PR1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Ephesians</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac09lapi/page/492/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livre/g79bAAAAQAAJ?hl=en&gbpv=1&pg=PA80">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-        
-    <div class="book-entry">
-      <div class="book-title">Philippians</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac09lapi/page/578/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livre/g79bAAAAQAAJ?hl=en&gbpv=1&pg=PA165">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Colossians</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac09lapi/page/636/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livre/g79bAAAAQAAJ?hl=en&gbpv=1&pg=PA225">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">1 Thessalonians</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac09lapi/page/674/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livre/g79bAAAAQAAJ?hl=en&gbpv=1&pg=PA278">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">2 Thessalonians</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac09lapi/page/698/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livre/g79bAAAAQAAJ?hl=en&gbpv=1&pg=PA323">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">1 Timothy</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac09lapi/page/724/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livre/g79bAAAAQAAJ?hl=en&gbpv=1&pg=PA365">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">2 Timothy</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac09lapi/page/804/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livre/g79bAAAAQAAJ?hl=en&gbpv=1&pg=PA448">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Titus</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac09lapi/page/844/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livre/g79bAAAAQAAJ?hl=en&gbpv=1&pg=PA499">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Philemon</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac09lapi/page/864/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livre/g79bAAAAQAAJ?hl=en&gbpv=1&pg=PA537">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title">Hebrews</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac09lapi/page/870/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/Commentaire_litt%C3%A9ral_sur_tous_les_livre/g79bAAAAQAAJ?hl=en&gbpv=1&pg=PA552">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
+    <div class="tabs">
+      <button class="tab-button active" onclick="showTab('commentaries')">Commentaries</button>
+      <button class="tab-button" onclick="showTab('manuals')">Manuals</button>
+      <button class="tab-button" onclick="showTab('histories')">Histories</button>
     </div>
 
-    <div class="book-entry">
-      <div class="book-title">James</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac10lapi/page/402/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/Er9dAAAAcAAJ?hl=en&gbpv=1&pg=PR1">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
+    <div class="tab-content active" id="commentaries">
+      <details>
+        <summary>Wisdom Books</summary>
+        <details>
+          <summary>Job</summary>
+          <details>
+            <summary style="font-size: 16px; color: #ccc; padding-left: 20px;">St. Thomas Aquinas</summary>
+            <div class="commentators">
+              <p style='color: #aaa; font-size: 14px; font-style: italic; margin-bottom: 10px;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur quis arcu ut blandit. Nulla tincidunt pulvinar leo ac luctus. Mauris lacinia non diam vel tincidunt. Nunc vel molestie lectus, lacinia blandit nunc.</p>
+              <a href="#">Edition 1</a>
+              <a href="#">Critical Edition</a>
+            </div>
+          </details>
+        </details>
+      </details>
     </div>
 
-    <div class="book-entry">
-      <div class="book-title">1 Peter</div>
+    <div id="manuals" class="tab-content">
       <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac10lapi/page/592/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/Er9dAAAAcAAJ?hl=en&gbpv=1&pg=PA86">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
+        <a href="#">Cornely</a>
+        <a href="#">John Doe</a>
+        <a href="#">Doe John</a>
       </div>
     </div>
 
-    <div class="book-entry">
-      <div class="book-title">2 Peter</div>
+    <div id="histories" class="tab-content">
       <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac10lapi/page/738/mode/2up">Cornelius a Lapide</a> — <a href=" https://www.google.com/books/edition/_/Er9dAAAAcAAJ?hl=en&gbpv=1&pg=PA181">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
+        <a href="#">Author X</a>
+        <a href="#">Author Y</a>
       </div>
     </div>
 
-    <div class="book-entry">
-      <div class="book-title">1 John</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac10lapi/page/814/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/Er9dAAAAcAAJ?hl=en&gbpv=1&pg=PA238">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
+    <div class="footer">
+      Ad maiorem Dei gloriam
     </div>
-        
-    <div class="book-entry">
-      <div class="book-title">2 John</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac10lapi/page/926/mode/2up">Cornelius a Lapide</a> — <a href=" https://www.google.com/books/edition/_/Er9dAAAAcAAJ?hl=en&gbpv=1&pg=PA315">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>      
-
-    <div class="book-entry">
-      <div class="book-title">3 John</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac10lapi/page/934/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/Er9dAAAAcAAJ?hl=en&gbpv=1&pg=PA327">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>      
-
-    <div class="book-entry">
-      <div class="book-title">Jude</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac10lapi/page/940/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/Er9dAAAAcAAJ?hl=en&gbpv=1&pg=PA339">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>      
-
-    <div class="book-entry">
-      <div class="book-title">Apocalypse</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/commentariiinsac10lapi/page/1012/mode/2up">Cornelius a Lapide</a> — <a href="https://www.google.com/books/edition/_/Er9dAAAAcAAJ?hl=en&gbpv=1&pg=PA369">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">George L. Haydock</a>
-      </div>
-    </div>      
-        
- 
   </div>
+
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+      document.querySelector(`.tab-button[onclick*='${tabId}']`).classList.add('active');
+      const targetTab = document.getElementById(tabId);
+      if (targetTab) targetTab.classList.add('active');
+    }
+  </script>
 </body>
 </html>
