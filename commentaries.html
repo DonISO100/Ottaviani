@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Biblical Theology</title>
-  <meta name="description" content="Placeholder text here.">
+  <meta name="description" content="Catholic commentaries on Sacred Scripture from approved authors.">
   <link rel="icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
   <style>
@@ -20,7 +20,7 @@
       max-width: 900px;
       margin: 0 auto;
       padding: 40px 20px;
-      background-color: rgba(0, 0, 0, 0.85);
+      background-color: rgba(0, 0, 0, 0.5);
       position: relative;
     }
 
@@ -30,8 +30,8 @@
     }
 
     .image-header img {
-      width: 76.5%;
-      max-width: 520.2px;
+      width: 30%;
+      max-width: 250px;
       height: auto;
       border: 1px solid #333;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
@@ -66,6 +66,7 @@
       color: #fff;
       border-radius: 4px;
       font-size: 16px;
+      transition: background-color 0.3s ease;
     }
 
     .tab-button.active {
@@ -90,10 +91,23 @@
       border: 1px solid #444;
       border-radius: 6px;
       margin-top: 10px;
+      transition: background-color 0.3s ease;
+      margin-left: 0;
+      position: relative;
     }
 
-    details[open] summary {
-      background-color: #222;
+    details details > summary {
+      margin-left: 20px;
+    }
+
+    details details details > summary {
+      margin-left: 40px;
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    details[open] > summary {
+      background-color: #c4a878;
     }
 
     .commentators {
@@ -101,6 +115,7 @@
       background-color: #1a1a1a;
       border-left: 2px solid #555;
       margin-bottom: 10px;
+      margin-left: 40px;
     }
 
     .commentators a {
@@ -145,8 +160,8 @@
     <h1>Biblical Theology</h1>
 
     <figure class="image-header">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Juan_Francisco_de_Aguilera_-_The_Inmaculate_Conception_with_Jesuits_-_Google_Art_Project.jpg" alt="Juan Francisco de Aguilera - The Inmaculate Conception with Jesuits">
-      <figcaption>The Inmaculate Conception with Jesuits by Juan Francisco de Aguilera</figcaption>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Juan_Francisco_de_Aguilera_-_The_Inmaculate_Conception_with_Jesuits_-_Google_Art_Project.jpg" alt="The Immaculate Conception with Jesuits">
+      <figcaption>The Immaculate Conception with the Jesuits by Juan Francisco de Aguilera</figcaption>
     </figure>
 
     <div class="tabs">
@@ -157,46 +172,18 @@
 
     <div class="tab-content active" id="commentaries">
       <details>
-  <summary>Pentateuch</summary>
-  
-  <details>
-    <summary>Genesis</summary>
-    <details>
-      <summary style="font-size: 16px; color: #ccc; padding-left: 20px;">Cornelius a Lapide</summary>
-      <div class="commentators">
-        <a href="#">Commentary PDF</a>
-        <a href="#">Latin Critical Notes</a>
-      </div>
-    </details>
-  </details>
+        <summary>The Pentateuch</summary>
 
-  <details>
-    <summary>Exodus</summary>
-    <details>
-      <summary style="font-size: 16px; color: #ccc; padding-left: 20px;">Dom Calmet</summary>
-      <div class="commentators">
-        <a href="#">Commentary Volume 1</a>
-        <a href="#">Volume 2</a>
-      </div>
-    </details>
-  </details>
+        <details><summary>Genesis</summary><details><summary>Author A</summary><div class="commentators"><a href="#">Vol. 1</a><a href="#">Vol. 2</a><a href="#">Vol. 3</a><a href="#">Vol. 4</a><a href="#">Vol. 5</a></div></details><details><summary>Author B</summary><div class="commentators"><a href="#">One</a><a href="#">Two</a><a href="#">Three</a><a href="#">Four</a><a href="#">Five</a></div></details><details><summary>Author C</summary><div class="commentators"><a href="#">A</a><a href="#">B</a><a href="#">C</a><a href="#">D</a><a href="#">E</a></div></details><details><summary>Author D</summary><div class="commentators"><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a></div></details><details><summary>Author E</summary><div class="commentators"><a href="#">Alpha</a><a href="#">Beta</a><a href="#">Gamma</a><a href="#">Delta</a><a href="#">Epsilon</a></div></details></details>
 
-  <!-- Add Leviticus, Numbers, Deuteronomy the same way -->
-</details>
+        <details><summary>Exodus</summary><details><summary>Author A</summary><div class="commentators"><a href="#">Vol. 1</a><a href="#">Vol. 2</a><a href="#">Vol. 3</a><a href="#">Vol. 4</a><a href="#">Vol. 5</a></div></details><details><summary>Author B</summary><div class="commentators"><a href="#">One</a><a href="#">Two</a><a href="#">Three</a><a href="#">Four</a><a href="#">Five</a></div></details><details><summary>Author C</summary><div class="commentators"><a href="#">A</a><a href="#">B</a><a href="#">C</a><a href="#">D</a><a href="#">E</a></div></details><details><summary>Author D</summary><div class="commentators"><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a></div></details><details><summary>Author E</summary><div class="commentators"><a href="#">Alpha</a><a href="#">Beta</a><a href="#">Gamma</a><a href="#">Delta</a><a href="#">Epsilon</a></div></details></details>
 
-      <details>
-        <summary>Wisdom Books</summary>
-        <details>
-          <summary>Job</summary>
-          <details>
-            <summary style="font-size: 16px; color: #ccc; padding-left: 20px;">St. Thomas Aquinas</summary>
-            <div class="commentators">
-              <p style='color: #aaa; font-size: 14px; font-style: italic; margin-bottom: 10px;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur quis arcu ut blandit. Nulla tincidunt pulvinar leo ac luctus. Mauris lacinia non diam vel tincidunt. Nunc vel molestie lectus, lacinia blandit nunc.</p>
-              <a href="#">Edition 1</a>
-              <a href="#">Critical Edition</a>
-            </div>
-          </details>
-        </details>
+        <details><summary>Leviticus</summary><details><summary>Author A</summary><div class="commentators"><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a></div></details><details><summary>Author B</summary><div class="commentators"><a href="#">I</a><a href="#">II</a><a href="#">III</a><a href="#">IV</a><a href="#">V</a></div></details><details><summary>Author C</summary><div class="commentators"><a href="#">One</a><a href="#">Two</a><a href="#">Three</a><a href="#">Four</a><a href="#">Five</a></div></details><details><summary>Author D</summary><div class="commentators"><a href="#">Uno</a><a href="#">Dos</a><a href="#">Tres</a><a href="#">Cuatro</a><a href="#">Cinco</a></div></details><details><summary>Author E</summary><div class="commentators"><a href="#">Ichi</a><a href="#">Ni</a><a href="#">San</a><a href="#">Yon</a><a href="#">Go</a></div></details></details>
+
+        <details><summary>Numbers</summary><details><summary>Author A</summary><div class="commentators"><a href="#">A</a><a href="#">B</a><a href="#">C</a><a href="#">D</a><a href="#">E</a></div></details><details><summary>Author B</summary><div class="commentators"><a href="#">I</a><a href="#">II</a><a href="#">III</a><a href="#">IV</a><a href="#">V</a></div></details><details><summary>Author C</summary><div class="commentators"><a href="#">Vol. I</a><a href="#">Vol. II</a><a href="#">Vol. III</a><a href="#">Vol. IV</a><a href="#">Vol. V</a></div></details><details><summary>Author D</summary><div class="commentators"><a href="#">1st</a><a href="#">2nd</a><a href="#">3rd</a><a href="#">4th</a><a href="#">5th</a></div></details><details><summary>Author E</summary><div class="commentators"><a href="#">Set A</a><a href="#">Set B</a><a href="#">Set C</a><a href="#">Set D</a><a href="#">Set E</a></div></details></details>
+
+        <details><summary>Deuteronomy</summary><details><summary>Author A</summary><div class="commentators"><a href="#">One</a><a href="#">Two</a><a href="#">Three</a><a href="#">Four</a><a href="#">Five</a></div></details><details><summary>Author B</summary><div class="commentators"><a href="#">Alpha</a><a href="#">Beta</a><a href="#">Gamma</a><a href="#">Delta</a><a href="#">Epsilon</a></div></details><details><summary>Author C</summary><div class="commentators"><a href="#">Vol. 1</a><a href="#">Vol. 2</a><a href="#">Vol. 3</a><a href="#">Vol. 4</a><a href="#">Vol. 5</a></div></details><details><summary>Author D</summary><div class="commentators"><a href="#">Part A</a><a href="#">Part B</a><a href="#">Part C</a><a href="#">Part D</a><a href="#">Part E</a></div></details><details><summary>Author E</summary><div class="commentators"><a href="#">Red</a><a href="#">Blue</a><a href="#">Green</a><a href="#">Yellow</a><a href="#">Purple</a></div></details></details>
+
       </details>
     </div>
 
