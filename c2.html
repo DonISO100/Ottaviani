@@ -1,126 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Biblical Commentaries</title>
-  <meta name="description" content="Commentaries on the books of Sacred Scripture from renowned Catholic theologians.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biblical Theology</title>
+  <meta name="description" content="Catholic commentaries on Sacred Scripture from approved authors.">
   <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #000000;
-      font-family: "Times New Roman", serif;
-      color: #ffffff;
-      text-align: center;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Crimson Text', serif;
       margin: 0;
       padding: 0;
     }
-    #container {
-      width: 800px;
+
+    .container {
+      max-width: 900px;
       margin: 0 auto;
-      background-color: #111111;
-      padding: 20px;
-      border: 1px solid #555555;
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.85);
+      position: relative;
     }
+
+    .image-header {
+      margin: 20px 0 40px;
+      text-align: center;
+    }
+
+    .image-header img {
+      width: 76.5%;
+      max-width: 520.2px;
+      height: auto;
+      border: 1px solid #333;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    }
+
+    .image-header figcaption {
+      font-size: 14px;
+      color: #aaa;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
     h1 {
-      font-size: 32px;
-      color: #00ccff;
-      border-bottom: 2px solid #00ccff;
-      padding-bottom: 10px;
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #e0e0e0;
     }
-    .book-entry {
-      margin: 30px 0;
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 30px;
     }
-    .book-title {
-      font-size: 22px;
-      color: #66ccff;
+
+    .tab-button {
+      background: #111;
+      border: 1px solid #444;
+      padding: 10px 20px;
+      cursor: pointer;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .tab-button.active {
+      background: #333;
+      border-color: #666;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    summary {
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      background: #111;
+      padding: 10px;
+      border: 1px solid #444;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+
+    details[open] summary {
+      background-color: #222;
+    }
+
+    .commentators {
+      padding: 10px 20px;
+      background-color: #1a1a1a;
+      border-left: 2px solid #555;
       margin-bottom: 10px;
     }
+
     .commentators a {
-      color: #ffffff;
-      font-size: 18px;
+      color: #aad4ff;
       text-decoration: underline;
-      margin: 0 5px;
+      display: block;
+      margin: 5px 0;
     }
+
     .commentators a:hover {
-      color: #ff6666;
+      color: #ff9999;
     }
+
+    .home-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #222;
+      border: 1px solid #555;
+      color: #ccc;
+      padding: 6px 12px;
+      font-size: 14px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .home-button:hover {
+      background-color: #333;
+    }
+
     .footer {
-      font-size: 12px;
-      margin-top: 30px;
-      color: #cccccc;
+      text-align: center;
+      margin-top: 60px;
+      font-size: 13px;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <div id="container">
-    <p><a href="index.html" style="color: #66ccff; font-size: 16px; text-decoration: underline;">&larr; Back to Home</a></p>
+  <div class="container">
+    <a href="index.html" class="home-button">Home</a>
+    <h1>Biblical Theology</h1>
 
-    <div style="margin: 20px auto; text-align: center; font-size: 16px;">
-      <table style="margin: 0 auto; border-collapse: collapse;">
-        <tr>
-          <td><a href="#Genesis" style="color: #66ccff; text-decoration: underline;">Gn</a></td>
-          <td><a href="#Exodus" style="color: #66ccff; text-decoration: underline;">Ex</a></td>
-          <td><a href="#Leviticus" style="color: #66ccff; text-decoration: underline;">Lv</a></td>
-          <td><a href="#Numbers" style="color: #66ccff; text-decoration: underline;">Nu</a></td>
-          <td><a href="#Deuteronomy" style="color: #66ccff; text-decoration: underline;">Dt</a></td>
-        </tr>
-        <tr>
-          <td><a href="#Joshua" style="color: #66ccff; text-decoration: underline;">Jos</a></td>
-          <td><a href="#Judges" style="color: #66ccff; text-decoration: underline;">Jgs</a></td>
-          <td><a href="#Ruth" style="color: #66ccff; text-decoration: underline;">Ru</a></td>
-          <td><a href="#1 Kings (1 Samuel)" style="color: #66ccff; text-decoration: underline;">1Sm</a></td>
-          <td><a href="#2 Kings (2 Samuel)" style="color: #66ccff; text-decoration: underline;">2Sm</a></td>
-        </tr>
-        <!-- Add more rows as needed for full canon -->
-      </table>
+    <figure class="image-header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/St_Jerome_by_Michelangelo_Merisi_da_Caravaggio.jpeg" alt="St. Jerome by Caravaggio">
+      <figcaption>St. Jerome by Caravaggio</figcaption>
+    </figure>
+
+    <div class="tabs">
+      <button class="tab-button active" onclick="showTab('commentaries')">Commentaries</button>
+      <button class="tab-button" onclick="showTab('manuals')">Manuals</button>
+      <button class="tab-button" onclick="showTab('histories')">Histories</button>
     </div>
-    <p><i>Featuring classic Catholic commentaries by Lapide, Calmet, and others.</i></p>
 
-    <!-- BOOK ENTRIES START -->
+    <div class="tab-content active" id="commentaries">
+      <details>
+        <summary>Wisdom Books</summary>
+        <details>
+          <summary>Job</summary>
+          <details>
+            <summary style="font-size: 16px; color: #ccc; padding-left: 20px;">St. Thomas Aquinas</summary>
+            <div class="commentators">
+              <p style='color: #aaa; font-size: 14px; font-style: italic; margin-bottom: 10px;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur quis arcu ut blandit. Nulla tincidunt pulvinar leo ac luctus. Mauris lacinia non diam vel tincidunt. Nunc vel molestie lectus, lacinia blandit nunc.</p>
+              <a href="#">Edition 1</a>
+              <a href="#">Critical Edition</a>
+            </div>
+          </details>
+        </details>
+      </details>
+    </div>
 
-        <div class="book-entry">
-      <div class="book-title" id="Genesis">Genesis</div>
+    <div id="manuals" class="tab-content">
       <div class="commentators">
-        <a href="https://archive.org/details/CorneliusALapide">Cornelius a Lapide</a> — <a href="https://archive.org/details/AugustinCalmet">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">Richard Simon</a>
+        <a href="#">Cornely</a>
+        <a href="#">John Doe</a>
+        <a href="#">Doe John</a>
       </div>
     </div>
 
-    <div class="book-entry">
-      <div class="book-title" id="Exodus">Exodus</div>
+    <div id="histories" class="tab-content">
       <div class="commentators">
-        <a href="https://archive.org/details/CorneliusALapide">Cornelius a Lapide</a> — <a href="https://archive.org/details/AugustinCalmet">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">Richard Simon</a>
+        <a href="#">Author X</a>
+        <a href="#">Author Y</a>
       </div>
     </div>
-
-    <div class="book-entry">
-      <div class="book-title" id="Leviticus">Leviticus</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/CorneliusALapide">Cornelius a Lapide</a> — <a href="https://archive.org/details/AugustinCalmet">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">Richard Simon</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title" id="Numbers">Numbers</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/CorneliusALapide">Cornelius a Lapide</a> — <a href="https://archive.org/details/AugustinCalmet">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">Richard Simon</a>
-      </div>
-    </div>
-
-    <div class="book-entry">
-      <div class="book-title" id="Deuteronomy">Deuteronomy</div>
-      <div class="commentators">
-        <a href="https://archive.org/details/CorneliusALapide">Cornelius a Lapide</a> — <a href="https://archive.org/details/AugustinCalmet">Dom Augustin Calmet</a> — <a href="https://archive.org/details/RichardSimon">Richard Simon</a>
-      </div>
-    </div>
-
-    <!-- Remaining books to follow -->
-
-    <!-- BOOK ENTRIES END -->
 
     <div class="footer">
-      <p>Website by Don</p>
-      <p>Last updated: April 2025</p>
+      Ad maiorem Dei gloriam
     </div>
   </div>
+
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+      document.querySelector(`.tab-button[onclick*='${tabId}']`).classList.add('active');
+      const targetTab = document.getElementById(tabId);
+      if (targetTab) targetTab.classList.add('active');
+    }
+  </script>
 </body>
 </html>
