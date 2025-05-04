@@ -1,99 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>[Name] Archive</title>
-  <meta name="description" content="Archive of theological texts in mystical, moral, and biblical theology.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The [Name] Archive</title>
+  <meta name="description" content="Monastic-style archive of theological texts in mystical, moral, and biblical theology.">
   <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #000000;
-      font-family: "Times New Roman", serif;
-      color: #ffffff;
-      text-align: center;
+      background-color: #2e2417;
+      font-family: 'Crimson Text', serif;
+      color: #e8e2d6;
       margin: 0;
       padding: 0;
+      line-height: 1.7;
     }
-    #container {
-      width: 800px;
+
+    .container {
+      max-width: 720px;
       margin: 0 auto;
-      background-color: #111111;
-      padding: 20px;
-      border: 1px solid #555555;
+      padding: 40px 20px;
     }
-    h1 {
-      font-size: 32px;
-      color: #00ccff;
-      border-bottom: 2px solid #00ccff;
-      padding-bottom: 10px;
+
+    header {
+      text-align: center;
+      border-bottom: 1px solid #8b735a;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
     }
-    h2 {
-      color: #ffffff;
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      font-weight: normal;
+      color: #f3e4c5;
     }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 20px 0;
+
+    header p {
+      font-style: italic;
+      color: #d1c4b0;
     }
-    nav li {
-      margin: 10px 0;
+
+    .top-nav {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin: 30px 0;
+      flex-wrap: wrap;
     }
-    nav a {
-      color: #66ccff;
-      font-size: 18px;
-      text-decoration: underline;
+
+    .top-nav a {
+      text-decoration: none;
+      font-size: 16px;
+      background-color: #7a644b;
+      color: #fff9f0;
+      padding: 10px 20px;
+      border: 1px solid #a49077;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
-    nav a:hover {
-      color: #ff6666;
+
+    .top-nav a:hover {
+      background-color: #a49077;
+      color: #2c1f12;
     }
-    .footer {
-      font-size: 12px;
-      margin-top: 30px;
-      color: #cccccc;
+
+    figure {
+      text-align: center;
+      margin: 40px 0;
     }
-    .centered-img {
-      display: block;
-      margin: 20px auto;
-      max-width: 600px;
-      width: 100%;
-      height: auto;
-      border: 1px solid #444;
-      padding: 5px;
-      background-color: #222;
+
+    img {
+      max-width: 100%;
+      border: 1px solid #8b735a;
     }
+
     figcaption {
-      color: #cccccc;
+      font-style: italic;
       font-size: 14px;
-      margin-top: 8px;
+      color: #d1c4b0;
+      margin-top: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      color: #b2a58f;
+      border-top: 1px solid #8b735a;
+      padding-top: 20px;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
-  <div id="container">
-    <h1>Welcome to [Name not Chosen] </h1>
+  <div class="container">
+    <header>
+      <h1>[Name Goes Here] </h1>
+    </header>
+
+    <div class="top-nav">
+      <a href="mystical.html">Mystical Theology</a>
+      <a href="moral.html">Moral Theology</a>
+      <a href="commentaries.html">Biblical Theology</a>
+    </div>
+
     <figure>
-      <img 
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Fra_Angelico_-_Saint_Anthony_Abbot_Shunning_the_Mass_of_Gold_-_44.550_-_Museum_of_Fine_Arts.jpg/1024px-Fra_Angelico_-_Saint_Anthony_Abbot_Shunning_the_Mass_of_Gold_-_44.550_-_Museum_of_Fine_Arts.jpg" 
-        alt="St. Anthony flees from gold - Fra Angelico painting" 
-        class="centered-img" 
-        loading="lazy">
-      <figcaption><em>St. Anthony Flees from the Mound of Gold by Fra Angelico</em></figcaption>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Peter_Paul_Rubens_166.jpg" 
+           alt="Saint Teresa of Avila's vision of the dove by Peter Paul Rubens">
+      <figcaption>Saint Teresa of Avila's Vision of the Dove by Peter Paul Rubens</figcaption>
     </figure>
-    <p><i>Dedicated to preserving links to important theological texts.</i></p>
 
-    <h2>📂 Browse by Category</h2>
-    <nav>
-      <ul>
-        <li><a href="mystical.html" title="View Mystical Theology texts">Mystical Theology</a></li>
-        <li><a href="moral.html" title="View Moral Theology texts">Moral Theology</a></li>
-        <li><a href="commentaries.html" title="View Biblical Commentaries">Biblical Commentaries</a></li>
-      </ul>
-    </nav>
-
-
+    <div class="footer">
+ Ad maiorem Dei gloriam
+    </div>
   </div>
 </body>
 </html>
-
-
-
