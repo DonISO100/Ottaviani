@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moral Theology Library</title>
+  <meta name="description" content="Alphabetical index of moral‑theology authors." />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--cream:#f6f5eb;--ink:#1a1a1a;--accent:#8a734c}
+    html,body{margin:0;padding:0;background:var(--cream);color:var(--ink);font-family:"Crimson Text",serif;font-size:18px;height:100%}
+    main{max-width:900px;margin:0 auto;padding:40px 20px;position:relative}
+    h1{text-align:center;margin:0 0 20px;font-size:42px;font-weight:700}
+    h2{font-size:24px;font-weight:700;margin:20px 0 10px}
+    .banner{display:block;margin:0 auto 30px;max-width:300px;width:60%;height:auto;border:1px solid var(--accent);border-radius:4px}
+    .alpha-nav{position:fixed;right:0;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:4px;background:rgba(0,0,0,.05);padding:6px 4px;border-radius:6px 0 0 6px;z-index:1000}
+    .alpha-nav a{display:block;padding:2px 6px;font-size:14px;font-weight:700;color:var(--ink);text-decoration:none;border-radius:4px;text-align:center;transition:transform .2s,background-color .2s}
+    .alpha-nav a:hover{background:var(--accent);color:#fff;transform:translateX(-6px) scale(1.1)}
+    section[id^="letter-"]{margin-bottom:50px}
+    details summary{background:var(--cream);border:1px solid var(--accent);padding:8px 10px;border-radius:6px;font-weight:700;cursor:pointer;margin-top:10px}
+    details[open]>summary{background:var(--accent);color:#fff}
+    .books{padding:8px 20px;margin:6px 0 6px 40px;border-left:2px solid var(--accent)}
+    .books a{display:block;color:var(--ink);text-decoration:underline;margin:4px 0}
+    .books a:hover{color:var(--accent)}
+    /* Disclaimer modal */
+    #disclaimer-overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);display:flex;align-items:center;justify-content:center;z-index:9999}
+    #disclaimer{background:var(--cream);padding:40px;border-radius:10px;max-width:560px;box-shadow:0 4px 12px rgba(0,0,0,.3);text-align:center}
+    #disclaimer h2{font-size:32px;font-weight:700;margin:0 0 20px}
+    #disclaimer p{font-size:20px;font-weight:700;line-height:1.45;margin:0}
+    .modal-btn{margin:30px 10px 0;background:var(--accent);color:#fff;border:none;padding:12px 28px;font-size:18px;font-weight:700;border-radius:4px;cursor:pointer}
+    .modal-btn.leave{background:#555}
+    .modal-btn:hover{opacity:.9}
+  </style>
+</head>
+<body>
+  <!-- Disclaimer overlay -->
+  <div id="disclaimer-overlay">
+    <div id="disclaimer">
+      <h2>⚠️ NOTICE ⚠️</h2>
+      <p>Scrupulous persons are expressly forbidden to proceed. Lay readers must not access detailed sections on the 6th & 9th Commandments unless a prudent confessor has judged it truly necessary.</p>
+      <p>By clicking “Enter,” you affirm under conscience that you meet these conditions and will use the content solely for legitimate pastoral or academic purposes. Otherwise, select “Leave.”</p>
+      <button id="enter-btn" class="modal-btn">Enter</button>
+      <button id="leave-btn" class="modal-btn leave">Leave</button>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <nav class="alpha-nav" aria-label="Author index">
+    <a href="#letter-A">A</a><a href="#letter-B">B</a><a href="#letter-C">C</a><a href="#letter-D">D</a><a href="#letter-E">E</a><a href="#letter-F">F</a><a href="#letter-G">G</a><a href="#letter-H">H</a><a href="#letter-I">I</a><a href="#letter-J">J</a><a href="#letter-K">K</a><a href="#letter-L">L</a><a href="#letter-M">M</a><a href="#letter-N">N</a><a href="#letter-O">O</a><a href="#letter-P">P</a><a href="#letter-Q">Q</a><a href="#letter-R">R</a><a href="#letter-S">S</a><a href="#letter-T">T</a><a href="#letter-U">U</a><a href="#letter-V">V</a><a href="#letter-W">W</a><a href="#letter-X">X</a><a href="#letter-Y">Y</a><a href="#letter-Z">Z</a>
+  </nav>
+
+  <main>
+    <h1>Moral Theology</h1>
+    <img class="banner" src="https://catholicharboroffaithandmorals.com/St.%20Francis%20of%20Assisi%20and%20the%20Devil%2001.jpg" alt="St. Francis of Assisi and the Devil">
+
+    <section id="letter-A">
+      <h2>A</h2>
+      <details><summary>Abelly, Louis (†1691)</summary><div class="books"><a href="#">Book A</a><a href="#">Book B</a><a href="#">Book C</a><a href="#">Book D</a><a href="#">Book E</a></div></details>
+      <details><summary>Aertnys, Joseph (†1898)</summary><div class="books"><a href="#">Book A</a><a href="#">Book B</a><a href="#">Book C</a><a href="#">Book D</a><a href="#">Book E</a></div></details>
+      <details><summary>Albertus Magnus, St. (†1280)</summary><div class="books"><a href="#">Book A</a><a href="#">Book B</a><a href="#">Book C</a><a href="#">Book D</a><a href="#">Book E</a></div></details>
+      <details><summary>Alexander of Hales (†1245)</summary><div class="books"><a href="#">Book A</a><a href="#">Book B</a><a href="#">Book C</a><a href="#">Book D</a><a href="#">Book E</a></div></details>
+      <details><summary>Anselm of Canterbury, St. (†1109)</summary><div class="books"><a href="#">Book A</a><a href="#">Book B</a><a href="#">Book C</a><a href="#">Book D</a><a href="#">Book E</a></div></details>
+      <details><summary>Antoninus of Florence, St. (†1459)</summary><div class="books"><a href="#">Book A</a><a href="#">Book B</a><a href="#">Book C</a><a href="#">Book D</a><a href="#">Book E</a></div></details>
+      <details><summary>Alphonsus (†1787)</summary><div class="books"><a href="#">Book A</a><a href="#">Book B</a><a href="#">Book C</a><a href="#">Book D</a><a href="#">Book E</a></div></details>
+      <details><summary>Azor, Juan (†1603)</summary><div class="books"><a href="#">Book A</a><a href="#">Book B</a><a href="#">Book C</a><a href="#">Book D</a><a href="#">Book E
