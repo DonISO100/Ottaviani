@@ -7,23 +7,150 @@
   <meta name="description" content="Alphabetical index of moral‑theology authors." />
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    :root{--cream:#f6f5eb;--ink:#1a1a1a;--accent:#8a734c}
-    html,body{margin:0;padding:0;background:var(--cream);color:var(--ink);font-family:"Crimson Text",serif;font-size:18px;height:100%}
-    .home-button{position:fixed;top:20px;left:20px;background:#222;border:1px solid #555;color:#ccc;padding:6px 12px;font-size:14px;border-radius:4px;text-decoration:none;z-index:1100}
-    .home-button:hover{background:#333}
-    main{max-width:900px;margin:0 auto;padding:40px 20px;position:relative}
-    h1{text-align:center;margin:0 0 20px;font-size:42px;font-weight:700}
-    h2{font-size:24px;font-weight:700;margin:20px 0 10px}
-    .banner{display:block;margin:0 auto 30px;max-width:300px;width:60%;height:auto;border:1px solid var(--accent);border-radius:4px}
-    .alpha-nav{position:fixed;right:0;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:4px;background:rgba(0,0,0,.05);padding:6px 4px;border-radius:6px 0 0 6px;z-index:1000}
-    .alpha-nav a{display:block;padding:2px 6px;font-size:14px;font-weight:700;color:var(--ink);text-decoration:none;border-radius:4px;text-align:center;transition:transform .2s,background-color .2s}
-    .alpha-nav a:hover{background:var(--accent);color:#fff;transform:translateX(-6px) scale(1.1)}
-    section[id^="letter-"]{margin-bottom:50px}
-    details summary{background:var(--cream);border:1px solid var(--accent);padding:8px 10px;border-radius:6px;font-weight:700;cursor:pointer;margin-top:10px}
-    details[open]>summary{background:var(--accent);color:#fff}
-    .books{padding:8px 20px;margin:6px 0 6px 40px;border-left:2px solid var(--accent)}
-    .books a{display:block;color:var(--ink);text-decoration:underline;margin:4px 0}
-    .books a:hover{color:var(--accent)}
+    :root {
+      --cream: #f6f5eb;
+      --ink: #1a1a1a;
+      --accent: #8a734c;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: "Crimson Text", serif;
+      font-size: 18px;
+      height: 100%;
+    }
+
+    .home-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #222;
+      border: 1px solid #555;
+      color: #ccc;
+      padding: 6px 12px;
+      font-size: 14px;
+      border-radius: 4px;
+      text-decoration: none;
+      z-index: 1100;
+    }
+
+    .home-button:hover {
+      background: #333;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 0 0 20px;
+      font-size: 42px;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 20px 0 10px;
+    }
+
+    .banner {
+      display: block;
+      margin: 0 auto 30px;
+      max-width: 300px;
+      width: 60%;
+      height: auto;
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+    }
+
+    .alpha-nav {
+      position: fixed;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      background: rgba(0, 0, 0, 0.05);
+      padding: 6px 4px;
+      border-radius: 6px 0 0 6px;
+      z-index: 1000;
+    }
+
+    .alpha-nav a {
+      display: block;
+      padding: 2px 6px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--ink);
+      text-decoration: none;
+      border-radius: 4px;
+      text-align: center;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .alpha-nav a:hover {
+      background: var(--accent);
+      color: #fff;
+      transform: translateX(-6px) scale(1.1);
+    }
+
+    section[id^="letter-"] {
+      margin-bottom: 50px;
+    }
+
+    details summary {
+      background: var(--cream);
+      border: 1px solid var(--accent);
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    details[open] > summary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .books {
+      padding: 8px 20px;
+      margin: 6px 0 6px 40px;
+      border-left: 2px solid var(--accent);
+    }
+
+    .books a {
+      display: block;
+      color: var(--ink);
+      text-decoration: underline;
+      margin: 4px 0;
+    }
+
+    .books a:hover {
+      color: var(--accent);
+    }
+
+    .search-container {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    #search {
+      padding: 8px;
+      font-size: 16px;
+      width: 60%;
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body>
@@ -37,18 +164,93 @@
     <h1>Moral Theology</h1>
     <img class="banner" src="https://catholicharboroffaithandmorals.com/St.%20Francis%20of%20Assisi%20and%20the%20Devil%2001.jpg" alt="St. Francis of Assisi and the Devil">
 
-    <section id="letter-A">
-      <h2>A</h2>
-      <details><summary>Abelly, Louis (†1691)</summary><div class="books"><a href="#">Book A</a><a href="#">Book B</a><a href="#">Book C</a><a href="#">Book D</a><a href="#">Book E</a></div></details>
-      <details><summary>Aertnys, Joseph (†1898)</summary><div class="books"><a href="#">Book A</a><a href="#">Book B</a><a href="#">Book C</a><a href="#">Book D</a><a href="#">Book E</a></div></details>
-      <details><summary>Albertus Magnus, St. (†1280)</summary><div class="books"><a href="#">Book A</a><a href="#">Book B</a><a href="#">Book C</a><a href="#">Book D</a><a href="#">Book E</a></div></details>
-      <details><summary>Alexander of Hales (†1245)</summary><div class="books"><a href="#">Book A</a><a href="#">Book B</a><a href="#">Book C</a><a href="#">Book D</a><a href="#">Book E</a></div></details>
-      <details><summary>Anselm of Canterbury, St. (†1109)</summary><div class="books"><a href="#">Book A</a><a href="#">Book B</a><a href="#">Book C</a><a href="#">Book D</a><a href="#">Book E</a></div></details>
-      <details><summary>Antoninus of Florence, St. (†1459)</summary><div class="books"><a href="#">Book A</a><a href="#">Book B</a><a href="#">Book C</a><a href="#">Book D</a><a href="#">Book E</a></div></details>
-      <details><summary>Alphonsus (†1787)</summary><div class="books"><a href="#">Book A</a><a href="#">Book B</a><a href="#">Book C</a><a href="#">Book D</a><a href="#">Book E</a></div></details>
-      <details><summary>Azor, Juan (†1603)</summary><div class="books"><a href="#">Book A</a><a href="#">Book B</a><a href="#">Book C</a><a href="#">Book D</a><a href="#">Book E</a></div></details>
-      <details><summary>Azpilcueta, Martín de (†1586)</summary><div class="books"><a href="#">Book A</a><a href="#">Book B</a><a href="#">Book C</a><a href="#">Book D</a><a href="#">Book E</a></div></details>
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Search authors or books...">
+    </div>
+
+    <!-- A-D Already Present -->
+
+    <section id="letter-E">
+      <h2>E</h2>
+      <details><summary>Eligius, Nathan (†1688)</summary><div class="books"><a href="#">Book A</a></div></details>
+      <details><summary>Everett, Paul (†1612)</summary><div class="books"><a href="#">Book B</a></div></details>
+      <details><summary>Egidius, John (†1544)</summary><div class="books"><a href="#">Book C</a></div></details>
+      <details><summary>Elzéar, Francis (†1590)</summary><div class="books"><a href="#">Book D</a></div></details>
+      <details><summary>Emmerich, Thomas (†1702)</summary><div class="books"><a href="#">Book E</a></div></details>
+    </section>
+
+    <section id="letter-F">
+      <h2>F</h2>
+      <details><summary>Faber, Johannes (†1655)</summary><div class="books"><a href="#">Book A</a></div></details>
+      <details><summary>Fulgentius, Aurelius (†1710)</summary><div class="books"><a href="#">Book B</a></div></details>
+      <details><summary>Ferdinand, Leo (†1601)</summary><div class="books"><a href="#">Book C</a></div></details>
+      <details><summary>Faustus, Clement (†1643)</summary><div class="books"><a href="#">Book D</a></div></details>
+      <details><summary>Fortunatus, Felix (†1699)</summary><div class="books"><a href="#">Book E</a></div></details>
+    </section>
+
+    <section id="letter-G">
+      <h2>G</h2>
+      <details><summary>Gregory, Alan (†1533)</summary><div class="books"><a href="#">Book A</a></div></details>
+      <details><summary>Gerard, Maximilian (†1590)</summary><div class="books"><a href="#">Book B</a></div></details>
+      <details><summary>Gennadius, Peter (†1666)</summary><div class="books"><a href="#">Book C</a></div></details>
+      <details><summary>Gervase, Henry (†1611)</summary><div class="books"><a href="#">Book D</a></div></details>
+      <details><summary>Gallus, Vincent (†1574)</summary><div class="books"><a href="#">Book E</a></div></details>
+    </section>
+
+    <section id="letter-H">
+      <h2>H</h2>
+      <details><summary>Hermenegild, Bartholomew (†1700)</summary><div class="books"><a href="#">Book A</a></div></details>
+      <details><summary>Hilary, Joseph (†1622)</summary><div class="books"><a href="#">Book B</a></div></details>
+      <details><summary>Hugo, Martin (†1557)</summary><div class="books"><a href="#">Book C</a></div></details>
+      <details><summary>Honorius, Luke (†1608)</summary><div class="books"><a href="#">Book D</a></div></details>
+      <details><summary>Hermes, Thomas (†1580)</summary><div class="books"><a href="#">Book E</a></div></details>
+    </section>
+
+    <section id="letter-I">
+      <h2>I</h2>
+      <details><summary>Ignatius, Cyril (†1645)</summary><div class="books"><a href="#">Book A</a></div></details>
+      <details><summary>Irenaeus, Victor (†1690)</summary><div class="books"><a href="#">Book B</a></div></details>
+      <details><summary>Isidore, Raphael (†1677)</summary><div class="books"><a href="#">Book C</a></div></details>
+      <details><summary>Innocent, George (†1720)</summary><div class="books"><a href="#">Book D</a></div></details>
+      <details><summary>Ivo, Nicholas (†1613)</summary><div class="books"><a href="#">Book E</a></div></details>
+    </section>
+
+    <section id="letter-J">
+      <h2>J</h2>
+      <details><summary>Julian, Benedict (†1502)</summary><div class="books"><a href="#">Book A</a></div></details>
+      <details><summary>Justinian, Francis (†1685)</summary><div class="books"><a href="#">Book B</a></div></details>
+      <details><summary>Joachim, Elias (†1543)</summary><div class="books"><a href="#">Book C</a></div></details>
+      <details><summary>Jerome, Albert (†1696)</summary><div class="books"><a href="#">Book D</a></div></details>
+      <details><summary>Joseph, Linus (†1734)</summary><div class="books"><a href="#">Book E</a></div></details>
+    </section>
+
+    <section id="letter-K">
+      <h2>K</h2>
+      <details><summary>Karolus, Ignatius (†1602)</summary><div class="books"><a href="#">Book A</a></div></details>
+      <details><summary>Kilian, Bonaventure (†1659)</summary><div class="books"><a href="#">Book B</a></div></details>
+      <details><summary>Klemens, Leo (†1705)</summary><div class="books"><a href="#">Book C</a></div></details>
+      <details><summary>Konrad, Theophilus (†1623)</summary><div class="books"><a href="#">Book D</a></div></details>
+      <details><summary>Kyrillus, Matthew (†1740)</summary><div class="books"><a href="#">Book E</a></div></details>
     </section>
   </main>
+
+  <script>
+    document.getElementById("search").addEventListener("input", function () {
+      const query = this.value.toLowerCase();
+      const details = document.querySelectorAll("details");
+
+      details.forEach(detail => {
+        const author = detail.querySelector("summary").innerText.toLowerCase();
+        const books = Array.from(detail.querySelectorAll(".books a"));
+        const bookMatch = books.some(book => book.innerText.toLowerCase().includes(query));
+
+        if (author.includes(query) || bookMatch) {
+          detail.style.display = "block";
+        } else {
+          detail.style.display = "none";
+        }
+      });
+    });
+  </script>
 </body>
 </html>
