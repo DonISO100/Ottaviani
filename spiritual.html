@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spiritual Theology Library</title>
+  <meta name="description" content="Alphabetical index of spiritual-theology authors." />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --cream: #f6f5eb;
+      --ink: #1a1a1a;
+      --accent: #8a734c;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: "Crimson Text", serif;
+      font-size: 18px;
+      height: 100%;
+    }
+
+    .home-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #222;
+      border: 1px solid #555;
+      color: #ccc;
+      padding: 6px 12px;
+      font-size: 14px;
+      border-radius: 4px;
+      text-decoration: none;
+      z-index: 1100;
+    }
+
+    .home-button:hover {
+      background: #333;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 0 0 20px;
+      font-size: 42px;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 20px 0 10px;
+    }
+
+    .banner {
+      display: block;
+      margin: 0 auto 30px;
+      max-width: 300px;
+      width: 60%;
+      height: auto;
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+    }
+
+    .alpha-nav {
+      position: fixed;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      background: rgba(0, 0, 0, 0.05);
+      padding: 6px 4px;
+      border-radius: 6px 0 0 6px;
+      z-index: 1000;
+    }
+
+    .alpha-nav a {
+      display: block;
+      padding: 2px 6px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--ink);
+      text-decoration: none;
+      border-radius: 4px;
+      text-align: center;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .alpha-nav a:hover {
+      background: var(--accent);
+      color: #fff;
+      transform: translateX(-6px) scale(1.1);
+    }
+
+    section[id^="letter-"] {
+      margin-bottom: 50px;
+    }
+
+    details summary {
+      background: var(--cream);
+      border: 1px solid var(--accent);
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    details[open] > summary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .books {
+      padding: 8px 20px;
+      margin: 6px 0 6px 40px;
+      border-left: 2px solid var(--accent);
+    }
+
+    .books a {
+      display: block;
+      color: var(--ink);
+      text-decoration: underline;
+      margin: 4px 0;
+    }
+
+    .books a:hover {
+      color: var(--accent);
+    }
+
+    .search-container {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    #search {
+      padding: 8px;
+      font-size: 16px;
+      width: 60%;
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="home-button">Home</a>
+
+  <nav class="alpha-nav" aria-label="Author index">
+    <a href="#letter-A">A</a><a href="#letter-B">B</a><a href="#letter-C">C</a><a href="#letter-D">D</a><a href="#letter-E">E</a><a href="#letter-F">F</a><a href="#letter-G">G</a><a href="#letter-H">H</a><a href="#letter-I">I</a><a href="#letter-J">J</a><a href="#letter-K">K</a><a href="#letter-L">L</a><a href="#letter-M">M</a><a href="#letter-N">N</a><a href="#letter-O">O</a><a href="#letter-P">P</a><a href="#letter-Q">Q</a><a href="#letter-R">R</a><a href="#letter-S">S</a><a href="#letter-T">T</a><a href="#letter-U">U</a><a href="#letter-V">V</a><a href="#letter-W">W</a><a href="#letter-X">X</a><a href="#letter-Y">Y</a><a href="#letter-Z">Z</a>
+  </nav>
+
+  <main>
+    <h1>Spiritual Theology</h1>
+    <img class="banner" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Josefa_visao_de_s.joao_cruz.jpg" alt="Mystic Vision of St. John of the Cross">
+
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Search authors or books...">
+    </div>
+
+    <section id="letter-A">
+      <h2>A</h2>
+      <details>
+        <summary>St. Anthony the Great</summary>
+        <div class="books">
+          <a href="#">Book A</a>
+        </div>
+      </details>
+      <details>
+        <summary>St. Athanasius the Great</summary>
+        <div class="books">
+          <a href="#">Book A</a>
+        </div>
+      </details>
+      <details>
+        <summary>St. Ambrose of Milan</summary>
+        <div class="books">
+          <a href="#">Book A</a>
+        </div>
+      </details>
+    </section>
+
+    <section id="letter-E">
+      <h2>E</h2>
+      <details>
+        <summary>Evagrius Ponticus</summary>
+        <div class="books">
+          <a href="#">Book A</a>
+        </div>
+      </details>
+      <details>
+        <summary>St. Ephrem the Syrian</summary>
+        <div class="books">
+          <a href="#">Book A</a>
+        </div>
+      </details>
+    </section>
+
+    <section id="letter-H">
+      <h2>H</h2>
+      <details>
+        <summary>St. Honoratus of Lerins</summary>
+        <div class="books">
+          <a href="#">Book A</a>
+        </div>
+      </details>
+    </section>
+
+    <section id="letter-J">
+      <h2>J</h2>
+      <details>
+        <summary>St. Jerome</summary>
+        <div class="books">
+          <a href="#">Book A</a>
+        </div>
+      </details>
+      <details>
+        <summary>John Cassian</summary>
+        <div class="books">
+          <a href="#">Book A</a>
+        </div>
+      </details>
+    </section>
+
+    <section id="letter-M">
+      <h2>M</h2>
+      <details>
+        <summary>St. Macarius of Egypt</summary>
+        <div class="books">
+          <a href="#">Book A</a>
+        </div>
+      </details>
+      <details>
+        <summary>Marcus Eremita</summary>
+        <div class="books">
+          <a href="#">Book A</a>
+        </div>
+      </details>
+      <details>
+        <summary>St. Martin of Tours</summary>
+        <div class="books">
+          <a href="#">Book A</a>
+        </div>
+      </details>
+    </section>
+
+    <section id="letter-P">
+      <h2>P</h2>
+      <details>
+        <summary>St. Pachomius</summary>
+        <div class="books">
+          <a href="#">Book A</a>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("search").addEventListener("input", function () {
+      const query = this.value.toLowerCase();
+      const details = document.querySelectorAll("details");
+      const headings = document.querySelectorAll("h2");
+      const alphaNav = document.querySelector(".alpha-nav");
+
+      if (query.length > 0) {
+        alphaNav.style.display = "none";
+      } else {
+        alphaNav.style.display = "flex";
+      }
+
+      details.forEach(detail => {
+        const author = detail.querySelector("summary").innerText.toLowerCase();
+        const books = Array.from(detail.querySelectorAll(".books a"));
+        const bookMatch = books.some(book => book.innerText.toLowerCase().includes(query));
+
+        if (author.includes(query) || bookMatch) {
+          detail.style.display = "block";
+        } else {
+          detail.style.display = "none";
+        }
+      });
+
+      headings.forEach(heading => {
+        const section = heading.parentElement;
+        const visibleDetails = section.querySelectorAll("details");
+        const anyVisible = Array.from(visibleDetails).some(detail => detail.style.display !== "none");
+
+        heading.style.display = anyVisible ? "block" : "none";
+      });
+    });
+  </script>
+</body>
+</html>
