@@ -115,11 +115,28 @@
       font-weight: 700;
       cursor: pointer;
       margin-top: 10px;
+      position: relative;
     }
 
     details[open] > summary {
       background: var(--accent);
       color: #fff;
+    }
+
+    .note-toggle {
+      margin-left: 8px;
+      font-size: 16px;
+      color: var(--accent);
+      cursor: pointer;
+    }
+
+    .notes-display {
+      display: none;
+      background: #fff6e5;
+      border-left: 3px solid var(--accent);
+      padding: 10px 15px;
+      margin: 6px 0 10px 40px;
+      font-style: italic;
     }
 
     .books {
@@ -128,11 +145,13 @@
       border-left: 2px solid var(--accent);
     }
 
+    .books div {
+      margin: 4px 0;
+    }
+
     .books a {
-      display: block;
       color: var(--ink);
       text-decoration: underline;
-      margin: 4px 0;
     }
 
     .books a:hover {
@@ -173,129 +192,20 @@
       <details>
         <summary>St. Anthony the Great</summary>
         <div class="books">
-          <a href="#">Book A</a>
-        </div>
-      </details>
-      <details>
-        <summary>St. Athanasius the Great</summary>
-        <div class="books">
-          <a href="#">Book A</a>
-        </div>
-      </details>
-      <details>
-        <summary>St. Ambrose of Milan</summary>
-        <div class="books">
-          <a href="#">Book A</a>
-        </div>
-      </details>
-    </section>
-
-    <section id="letter-E">
-      <h2>E</h2>
-      <details>
-        <summary>Evagrius Ponticus</summary>
-        <div class="books">
-          <a href="#">Book A</a>
-        </div>
-      </details>
-      <details>
-        <summary>St. Ephrem the Syrian</summary>
-        <div class="books">
-          <a href="#">Book A</a>
-        </div>
-      </details>
-    </section>
-
-    <section id="letter-H">
-      <h2>H</h2>
-      <details>
-        <summary>St. Honoratus of Lerins</summary>
-        <div class="books">
-          <a href="#">Book A</a>
-        </div>
-      </details>
-    </section>
-
-    <section id="letter-J">
-      <h2>J</h2>
-      <details>
-        <summary>St. Jerome</summary>
-        <div class="books">
-          <a href="#">Book A</a>
-        </div>
-      </details>
-      <details>
-        <summary>John Cassian</summary>
-        <div class="books">
-          <a href="#">Book A</a>
-        </div>
-      </details>
-    </section>
-
-    <section id="letter-M">
-      <h2>M</h2>
-      <details>
-        <summary>St. Macarius of Egypt</summary>
-        <div class="books">
-          <a href="#">Book A</a>
-        </div>
-      </details>
-      <details>
-        <summary>Marcus Eremita</summary>
-        <div class="books">
-          <a href="#">Book A</a>
-        </div>
-      </details>
-      <details>
-        <summary>St. Martin of Tours</summary>
-        <div class="books">
-          <a href="#">Book A</a>
-        </div>
-      </details>
-    </section>
-
-    <section id="letter-P">
-      <h2>P</h2>
-      <details>
-        <summary>St. Pachomius</summary>
-        <div class="books">
-          <a href="#">Book A</a>
+          <div>
+            <a href="#">Book A</a><span class="note-toggle">*</span>
+            <div class="notes-display">This book explores his earliest hermitical teachings in the Thebaid.</div>
+          </div>
         </div>
       </details>
     </section>
   </main>
 
   <script>
-    document.getElementById("search").addEventListener("input", function () {
-      const query = this.value.toLowerCase();
-      const details = document.querySelectorAll("details");
-      const headings = document.querySelectorAll("h2");
-      const alphaNav = document.querySelector(".alpha-nav");
-
-      if (query.length > 0) {
-        alphaNav.style.display = "none";
-      } else {
-        alphaNav.style.display = "flex";
-      }
-
-      details.forEach(detail => {
-        const author = detail.querySelector("summary").innerText.toLowerCase();
-        const books = Array.from(detail.querySelectorAll(".books a"));
-        const bookMatch = books.some(book => book.innerText.toLowerCase().includes(query));
-
-        if (author.includes(query) || bookMatch) {
-          detail.style.display = "block";
-        } else {
-          detail.style.display = "none";
-        }
-      });
-
-      headings.forEach(heading => {
-        const section = heading.parentElement;
-        const visibleDetails = section.querySelectorAll("details");
-        const anyVisible = Array.from(visibleDetails).some(detail => detail.style.display !== "none");
-
-        heading.style.display = anyVisible ? "block" : "none";
+    document.querySelectorAll('.note-toggle').forEach(toggle => {
+      toggle.addEventListener('click', function (e) {
+        const noteBox = this.nextElementSibling;
+        noteBox.style.display = noteBox.style.display === 'block' ? 'none' : 'block';
       });
     });
   </script>
